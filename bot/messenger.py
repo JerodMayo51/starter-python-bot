@@ -27,8 +27,8 @@ class Messenger(object):
 
     def write_greeting(self, channel_id, user_id):
         greetings = ['Hi', 'Hello', 'Nice to meet you', 'Howdy', 'Salutations']
-        txt = '{}, <@{}>!'.format("yoyoyo", user_id)
-        self.send_message(channel_id, txt)
+        txt = '{}, <@{}>!'.format(random.choice(greetings), user_id)
+        self.send_message(channel_id, "hooola")
 
     def write_prompt(self, channel_id):
         bot_uid = self.clients.bot_user_id()
